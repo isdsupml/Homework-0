@@ -1,0 +1,1 @@
+res <- polls %>% group_by(pollster) %>% summarize(avg=mean(spread), s=sd(spread),n = n())
